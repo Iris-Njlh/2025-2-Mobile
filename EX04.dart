@@ -1,21 +1,14 @@
-import 'dart:io';
-
 void main() {
-  stdout.write("Digite a primeira nota: ");
-  double nota1 = double.parse(stdin.readLineSync()!);
-
-  stdout.write("Digite a segunda nota: ");
-  double nota2 = double.parse(stdin.readLineSync()!);
+  double nota1 = 6; // Mude esse valor para TESTE
+  double nota2 = 8; // Mude esse valor PARA TESTE
 
   double media = (nota1 + nota2) / 2;
 
-  print("Média final: ${media.toStringAsFixed(1)}");
-
   if (media >= 7) {
-    print("Situação: Aprovado");
+    print("Aprovado, parabéns!");
   } else if (media >= 4) {
-    print("Situação: Recuperação");
+    print("Você está de recuperação, ainda da tempo de melhorar!");
   } else {
-    print("Situação: Reprovado");
+    print("Reprovado. Que pena! Estude mais da próxima!");
   }
 }

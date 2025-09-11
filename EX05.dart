@@ -1,15 +1,11 @@
-import 'dart:io';
-
 void main() {
-  stdout.write("Digite o nome de usuário: ");
-  String usuario = stdin.readLineSync()!;
-
-  stdout.write("Digite a senha: ");
-  String senha = stdin.readLineSync()!;
+  String usuario = "admin"; // Mude esse valor para TESTE
+  String senha = "1234";    // Mude esse valor para TESTE
 
   if (usuario == "admin" && senha == "1234") {
-    print("Acesso concedido");
+    print("Acesso concedido, seja bem vindo!");
   } else {
     print("Acesso negado");
   }
 }
+
