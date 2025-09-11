@@ -1,12 +1,9 @@
-import 'dart:io';
-
 void main() {
-  stdout.write("Digite sua idade: ");
-  int idade = int.parse(stdin.readLineSync()!);
+  int idade = 18; // Mude esse valor para TESTE
 
   if (idade >= 16) {
-    print("Você está apto(a) a votar este ano.");
+    print("Você pode votar!");
   } else {
-    print("Você NÃO está apto(a) a votar este ano.");
+    print("Você não pode votar.");
   }
 }
