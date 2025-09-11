@@ -1,6 +1,6 @@
 void main() {
-  double peso = 70;   // Mude este valor para TESTE
-  double altura = 1.75; // Mude este valor para TESTE
+  double peso = 70;   // Mude esse valor para TESTE
+  double altura = 1.75; // Mude esse valor para TESTE
 
   double imc = peso / (altura * altura);
 
