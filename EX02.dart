@@ -1,14 +1,10 @@
-import 'dart:io';
-
 void main() {
-  stdout.write("Digite o valor da compra: R\$ ");
-  double valor = double.parse(stdin.readLineSync()!);
+  double valorCompra = 120; // Mude esse valor para TESTE
 
-  if (valor > 100) {
-    double desconto = valor * 0.10;
-    double valorFinal = valor - desconto;
-    print("Valor com desconto: R\$ ${valorFinal.toStringAsFixed(2)}");
+  if (valorCompra > 100) {
+    double valorFinal = valorCompra * 0.9; // 10% de DESCONTO
+    print("Valor com desconto: $valorFinal");
   } else {
-    print("Valor da compra: R\$ ${valor.toStringAsFixed(2)}");
+    print("Valor da compra: $valorCompra");
   }
 }
