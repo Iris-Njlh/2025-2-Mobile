@@ -29,7 +29,6 @@ class PDVapp {
             print('\nObrigado por usar o sistema PDV!');
         } else {
             exibirResultado();
-        
-        }
+        } 
     }
 }
