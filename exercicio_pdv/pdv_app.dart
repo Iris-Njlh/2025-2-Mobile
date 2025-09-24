@@ -20,10 +20,16 @@ class PDVapp {
                 ItemCompra item = lerDadosCompra();
                 carrinho.adicionarItem (item);
                 print ('\nProduto adicionado com sucesso!');
-            }
-            else {
+            } else {
                 continuar = false;
             }
+        }
+        if (carrinho.estaVazio()) {
+            print('\nNenhum produto foi adicionado ao carrinho.');
+            print('\nObrigado por usar o sistema PDV!');
+        } else {
+            exibirResultado();
+        
         }
     }
 }
