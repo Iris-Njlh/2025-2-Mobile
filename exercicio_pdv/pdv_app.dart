@@ -13,7 +13,17 @@ class PDVapp {
         bool continuar = true;
 
         while (continuar) {
-            
+            print ('Deseja adicionar um produto ao carrinho? (S/N)');
+            String resposta = stdin.readLineSync()?.toUpperCase() ?? 'N';
+
+            if (resposta == 'S') {
+                ItemCompra item = lerDadosCompra();
+                carrinho.adicionarItem (item);
+                print ('\nProduto adicionado com sucesso!');
+            }
+            else {
+                continuar = false;
+            }
         }
     }
 }
